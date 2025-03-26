@@ -1,0 +1,233 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  padding: 10px 20px;
+  color: white;
+  border-bottom: 5px solid #333;
+}
+
+header img {
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .tit {
+  text-align: center;
+  flex-grow: 1;
+}
+
+header .tit h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header .tit h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+/* Section Styling */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+section p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Image Styling */
+header img:nth-child(1),
+header img:nth-child(3),
+header img:nth-child(4) {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  margin: 0 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for Welcome and For Students Section */
+.beec {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    gap: 20px;
+}
+
+.beec .welcome,
+.beec .forstd {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for UL and LI */
+.beec ul {
+    list-style: none;
+    padding: 0;
+}
+
+.beec ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f1f1f1;
+    border-left: 5px solid #4caf50;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.beec ul li:hover {
+    background: #e8f5e9;
+    transform: translateX(5px);
+}
+
+/* Headings Styling */
+.beec h2,
+.beec h3 {
+    margin-bottom: 15px;
+    color: #4caf50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Styling for .sc class */
+.sc {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: #4caf50;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Section Styling */
+.form {
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form .image-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .image-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form form label {
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.form form input,
+.form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form form input:focus,
+.form form textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+.form form input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #4caf50;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.form form label[for="male"],
+.form form label[for="female"],
+.form form label[for="other"] {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+}
+.form form button {
+    padding: 10px ;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form form button:hover {
+    background: #45a049;
+}
+
+.form .imform {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto; 
+}
